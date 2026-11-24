@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827"><meta name="description" content="Ontdek bijzondere 3D-prints en stel jouw product helemaal zelf samen."><title>3D Printed Shop</title>
+  <link rel="icon" href="./favicon.ico" sizes="any"><link rel="stylesheet" href="./styles.css?v=34-chatbot-herstel-300-faq-maintenance-fcm-chatpref-filament-export-5"><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script><script defer src="https://unpkg.com/lucide@latest" onload="if(window.lucide){window.lucide.createIcons();new MutationObserver(records=>records.forEach(r=>r.addedNodes.forEach(n=>{if(n.nodeType===1)window.lucide.createIcons({root:n})}))).observe(document.body,{subtree:true,childList:true})}"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">3D</span> printed<span>shop</span></a>
+  <div class="search-wrap"><input id="search" placeholder="Waar ben je naar op zoek?" aria-label="Zoeken"><button id="searchBtn"><i data-lucide="search"></i><span>Zoeken</span></button></div>
+  <nav><button class="nav-btn" id="accountBtn" type="button" aria-label="Inloggen" title="Inloggen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg><span>Inloggen</span></button><button class="nav-btn" id="myOrdersBtn" type="button" title="Mijn bestellingen" aria-label="Mijn bestellingen"><i data-lucide="package-check"></i><span>Mijn bestellingen</span></button><button class="nav-btn" id="myChatsBtn" type="button" title="Mijn chats" aria-label="Mijn chats"><i data-lucide="messages-square"></i><span>Mijn chats</span></button><button class="nav-btn favorites-nav-btn" id="favoritesBtn" type="button" title="Favorieten" aria-label="Favorieten"><i data-lucide="heart"></i><span>Favorieten</span><b id="favoriteCount" class="favorite-count"></b></button><button class="nav-btn admin-entry" id="adminEntry" type="button" aria-label="Sitebeheer" title="Sitebeheer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"></path><circle cx="18" cy="15" r="3"></circle><path d="M18 10v2m0 6v2m-5-5h2m6 0h2"></path></svg><span>Sitebeheer</span></button><button class="cart-btn" id="cartBtn"><i data-lucide="shopping-bag"></i><span>Winkelwagen</span> <b id="cartCount">0</b></button></nav>
+</header>
+<div class="notice"><i data-lucide="sparkles"></i> Welkom bij 3D Printed Shop <span>·</span> Persoonlijke service en snel geholpen</div>
+<main class="mx-auto">
+  <section class="hero flex items-center">
+    <div><p class="eyebrow">ONTDEK JOUW FAVORIETEN</p><h1>Goed gekozen.<br><em>Goed geregeld.</em></h1><p>Bekijk onze producten en bestel eenvoudig online.</p><a href="#producten" class="primary-link">Bekijk producten <i data-lucide="arrow-right"></i></a></div>
+    <div class="hero-art"><div class="orb"></div><div class="hero-card">✦<strong>3D prints</strong><small>Nieuwe favorieten<br>ontdekken</small></div><div class="hero-spark">✳</div></div>
+  </section>
+  <section class="quote-cta-section" aria-labelledby="quoteCtaTitle">
+    <div class="quote-cta-copy"><p class="eyebrow">HELEMAAL OP MAAT</p><h2 id="quoteCtaTitle">Offerte aanvragen voor eigen product</h2><p>Heb je zelf een idee voor een 3D-print? Stuur je ontwerp, afmetingen en kleurwens op. We bespreken de mogelijkheden met je in een persoonlijk offertegesprek.</p></div>
+    <button type="button" id="requestQuoteBtn" class="primary quote-cta-button"><i data-lucide="messages-square"></i> Offerte aanvragen</button>
+  </section>
+  <section id="producten" class="products-section"><div class="section-head"><div><p class="eyebrow">ONS ASSORTIMENT</p><h2>Populaire producten</h2></div><span id="productTotal" class="muted"></span></div><div id="categoryFilters" class="category-filter-bar" hidden></div><div id="products" class="product-grid" aria-live="polite" aria-busy="true">
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+      <article class="skeleton-card" aria-hidden="true"><div class="skeleton-image"><div class="a1-loader"><div class="a1-loader-scene"><div class="a1-loader-brand"><span class="a1-status-dot"></span>BAMBU LAB <b>A1 MINI</b></div><svg class="a1-mini-printer-svg" viewBox="0 0 260 190" role="presentation" focusable="false" aria-hidden="true">
+    <ellipse cx="128" cy="174" rx="91" ry="8" fill="#08152c" opacity=".28"/>
+    <path d="M37 146 194 146 220 155 62 158Z" fill="#aeb8c6" stroke="#657386" stroke-width="1.5"/><path d="M37 146 194 146 194 166 62 169 37 159Z" fill="#f7f9fc" stroke="#aab4c2" stroke-width="1.5"/><path d="M194 146 220 155 220 167 194 166Z" fill="#d4dbe5" stroke="#8793a3" stroke-width="1.3"/><rect x="168" y="146" width="31" height="19" rx="3" fill="#172a40" stroke="#60728a" stroke-width="1.1"/><rect x="171" y="149" width="25" height="13" rx="1.5" fill="#eaf6f5"/><text class="a1-screen-percent" x="173" y="155" fill="#18354a" font-size="5.6" font-family="Arial,sans-serif" font-weight="700">0%</text><rect x="173" y="157.5" width="21" height="2.8" rx="1.2" fill="#c6d7d7"/><rect class="a1-screen-progress-fill" x="173" y="157.5" width="0" height="2.8" rx="1.2" fill="#0da69c"/>
+    <path d="M197 37 214 42 214 151 198 146Z" fill="#d7dee8" stroke="#7c899b" stroke-width="1.6"/><path d="M203 43 208 45 208 142 203 141Z" fill="#f8fafc"/><path d="M51 39 208 39 216 45 59 45Z" fill="#f7f9fc" stroke="#8995a5" stroke-width="1.5"/><path d="M59 45 216 45 216 57 59 57Z" fill="#b7c1ce" stroke="#718096" stroke-width="1.3"/><path d="M64 48 208 48 208 52 64 52Z" fill="#26364d"/>
+    <circle cx="231" cy="30" r="15" fill="#25364d" stroke="#d8e1ec" stroke-width="3"/><circle cx="231" cy="30" r="8.5" fill="#8d9caf" stroke="#f8fafc" stroke-width="2"/><circle cx="231" cy="30" r="3" fill="#26364d"/><path d="M220 20 C204 5 186 10 171 23 S145 39 132 47" fill="none" stroke="#f5a942" stroke-width="4" stroke-linecap="round"/>
+    <g class="a1-printer-head"><rect x="105" y="48" width="44" height="31" rx="6" fill="#f8fafc" stroke="#78879a" stroke-width="1.7"/><path d="M109 52h36v5h-36Z" fill="#d6dee8"/><rect x="115" y="59" width="24" height="13" rx="3" fill="#25364d"/><circle cx="127" cy="65.5" r="3.1" fill="#62d7d0"/><path d="M116 78h22l-3 12h-16Z" fill="#aeb9c8" stroke="#657386" stroke-width="1.2"/><path d="M122 89h10l-3 9h-4Z" fill="#25364d"/><path d="M127 97v5" stroke="#f5a942" stroke-width="2.8" stroke-linecap="round" class="a1-nozzle-glow"/></g>
+    <g class="a1-printer-bed"><path d="M50 124 173 124 194 134 69 134Z" fill="#26364d" stroke="#718096" stroke-width="1.3"/><path d="M69 134 194 134 194 139 69 139Z" fill="#8a98aa"/><path d="M83 126 168 126 183 132 98 132Z" fill="#43536a"/></g>
+    <g class="a1-printed-object"><path d="M105 123 105 108 114 102 142 102 151 108 151 123Z" fill="#17a6a1" stroke="#087d80" stroke-width="1.2"/><path d="M105 108 114 102 142 102 151 108 141 113 115 113Z" fill="#56d8ca" stroke="#087d80" stroke-width="1.1"/><path d="M111 116h34M110 120h37M113 112h32" fill="none" stroke="#a5fff0" stroke-width="1.1" opacity=".8"/><path d="M115 104 115 122M121 103 121 123M127 103 127 123M133 103 133 123M139 103 139 122" stroke="#087d80" stroke-width=".7" opacity=".55"/></g>
+    <path d="M45 160 190 160" stroke="#fff" stroke-width="1" opacity=".8"/>
+  </svg><span class="a1-loader-caption">Product wordt geprint…</span><span class="a1-loader-subline">Printkop beweegt · laag voor laag</span></div></div><div class="skeleton-line skeleton-title"></div><div class="skeleton-line skeleton-price"></div><div class="skeleton-line skeleton-button"></div></article>
+    </div></section>
+  <section class="service-strip"><div>📦 <b>Volg je bestelling</b><small>Bekijk de status via je account</small></div><div>💬 <b>Persoonlijke hulp</b><small>Chat rechtstreeks met ons team</small></div><div>🔒 <b>Veilig bestellen</b><small>Je gegevens zijn beschermd</small></div></section>
+  <p class="shipping-note">Verzendkosten: <strong>€ 3,95</strong> bij bezorgen · Ophalen is gratis.</p>
+</main>
+<footer>
+  <a class="brand" href="#"><span class="brand-mark">3D</span> printed<span>shop</span></a>
+  <span>© <span id="year"></span> 3D Printed Shop</span>
+  <div class="footer-legal-links">
+    <button type="button" id="openTerms">Algemene voorwaarden</button>
+    <button type="button" id="openContact">Contact</button>
+    <button type="button" id="openPrivacy">Privacyverklaring &amp; privacyrechten</button>
+    <button type="button" id="openCookieSettings">Cookie-instellingen</button>
+  </div>
+</footer>
+
+<section class="cookie-banner" id="cookieBanner" aria-label="Cookievoorkeuren" hidden>
+  <div class="cookie-banner-copy">
+    <strong>Jouw privacy is belangrijk</strong>
+    <p>Deze webshop gebruikt noodzakelijke browseropslag om bijvoorbeeld je winkelwagen en sessie te laten werken. Optionele cookies voor statistieken of marketing worden alleen geplaatst als je daarvoor kiest. Lees de <button type="button" class="text-link" id="cookiePrivacyLink">privacyverklaring</button>.</p>
+  </div>
+  <div class="cookie-actions">
+    <button type="button" class="secondary" id="rejectOptionalCookies">Alleen noodzakelijk</button>
+    <button type="button" class="primary" id="acceptAllCookies">Alles accepteren</button>
+  </div>
+</section>
+
+<div class="privacy-modal" id="privacyModal" hidden>
+  <div class="privacy-backdrop" data-close-privacy></div>
+  <section class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <button type="button" class="privacy-close" id="closePrivacy" aria-label="Sluiten">×</button>
+    <p class="eyebrow">3D PRINTED SHOP</p>
+    <h2 id="privacyTitle">Privacyverklaring &amp; jouw privacyrechten</h2>
+    <p class="privacy-updated">Laatst bijgewerkt: 17 november 2026</p>
+    <div class="privacy-content">
+      <h3>1. Wie is verantwoordelijk?</h3>
+      <p>De verantwoordelijke voor de verwerking van persoonsgegevens via deze webshop is de exploitant van 3D Printed Shop. De naam, het adres en het e-mailadres staan op de contactpagina: <strong id="privacyControllerDetails">[vul naam, adres en e-mailadres in]</strong>. Gebruik de chat in de webshop alleen als aanvullend contactkanaal.</p>
+      <h3>2. Welke gegevens verwerken wij?</h3>
+      <p>Afhankelijk van wat je doet, kunnen wij je naam, e-mailadres, bezorg- of afhaalgegevens, bestelgegevens, gekozen productopties, berichten aan onze klantenservice en gegevens over betalingen of betaalstatus verwerken. Wij vragen je geen gegevens te delen die niet nodig zijn voor je bestelling.</p>
+      <h3>3. Waarvoor gebruiken wij je gegevens?</h3>
+      <ul>
+        <li>Om je account en bestellingen aan te maken en te beheren.</li>
+        <li>Om bestellingen te betalen, te maken, te bezorgen of klaar te zetten.</li>
+        <li>Om vragen, klachten, retouraanvragen en serviceverzoeken af te handelen.</li>
+        <li>Om te voldoen aan wettelijke verplichtingen, zoals fiscale administratie.</li>
+        <li>Om de webshop te beveiligen en misbruik of fraude te helpen voorkomen.</li>
+      </ul>
+      <h3>4. Op welke grondslagen?</h3>
+      <p>Wij verwerken gegevens wanneer dat nodig is om je bestelling uit te voeren, om aan wettelijke verplichtingen te voldoen, vanwege een gerechtvaardigd belang zoals beveiliging en klantenservice, of op basis van jouw toestemming wanneer die wettelijk vereist is. Als een verwerking op toestemming berust, kun je die toestemming later intrekken.</p>
+      <h3>5. Met wie delen wij gegevens?</h3>
+      <p>Wij delen gegevens alleen wanneer dat nodig is voor de webshop of wettelijk verplicht is. De webshop gebruikt Firebase-diensten van Google voor onder meer database- en applicatiefuncties. Als je via een externe betaalmethode betaalt, ontvangt de betreffende betaaldienstverlener de gegevens die nodig zijn om de betaling af te handelen. Vul hier vóór publicatie de daadwerkelijk gebruikte betaal- en bezorgdiensten en links naar hun privacyverklaringen in. Wij verkopen je persoonsgegevens niet.</p>
+      <h3>6. Bewaartermijnen</h3>
+      <p>Wij bewaren persoonsgegevens niet langer dan noodzakelijk voor het doel waarvoor ze zijn verzameld. Bestel- en administratiegegevens kunnen langer worden bewaard wanneer de wet dat vereist. Account-, chat- en servicegegevens worden verwijderd of geanonimiseerd zodra ze niet meer nodig zijn, tenzij een wettelijke verplichting of een geschil een langere bewaring noodzakelijk maakt.</p>
+      <h3>7. Beveiliging</h3>
+      <p>Wij nemen passende technische en organisatorische maatregelen om persoonsgegevens te beschermen. Geen enkele internetverbinding of opslagmethode kan echter volledige veiligheid garanderen. Deel nooit je wachtwoord of betaalgegevens via een chatbericht.</p>
+      <h3>8. Jouw privacyrechten</h3>
+      <p>Je kunt, voor zover de privacywetgeving daarin voorziet:</p>
+      <ul>
+        <li><strong>Inzage vragen:</strong> opvragen welke persoonsgegevens wij van je verwerken.</li>
+        <li><strong>Correctie vragen:</strong> onjuiste of onvolledige gegevens laten aanpassen.</li>
+        <li><strong>Verwijdering vragen:</strong> verzoeken je persoonsgegevens te verwijderen.</li>
+        <li><strong>Beperking vragen:</strong> verzoeken de verwerking tijdelijk te beperken.</li>
+        <li><strong>Bezwaar maken:</strong> bezwaar maken tegen verwerkingen die op een gerechtvaardigd belang zijn gebaseerd.</li>
+        <li><strong>Gegevensoverdraagbaarheid:</strong> bepaalde gegevens in een gangbaar, digitaal formaat ontvangen.</li>
+        <li><strong>Toestemming intrekken:</strong> toestemming op ieder moment intrekken. Dit heeft geen terugwerkende kracht.</li>
+      </ul>
+      <p>Stuur je verzoek via de chat in de webshop en vermeld hoe wij je bestelling of account kunnen terugvinden. Wij kunnen je vragen je identiteit te bevestigen om te voorkomen dat gegevens aan de verkeerde persoon worden verstrekt. Wij reageren in principe binnen één maand. In bepaalde gevallen mag deze termijn wettelijk worden verlengd.</p>
+      <p>Ben je niet tevreden over onze afhandeling? Dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens via <a href="https://autoriteitpersoonsgegevens.nl/" target="_blank" rel="noopener noreferrer">autoriteitpersoonsgegevens.nl</a>.</p>
+      <h3>9. Cookies en vergelijkbare opslag</h3>
+      <p>De webshop gebruikt noodzakelijke browseropslag voor functies die je zelf gebruikt, zoals het onthouden van je winkelwagen en je aanmeldsessie. Dit kan bestaan uit lokale opslag of sessieopslag in je browser en is nodig om de gevraagde functionaliteit te leveren. In deze versie zijn geen optionele statistiek- of marketingcookies geconfigureerd. Als zulke technieken later worden toegevoegd, vragen wij waar nodig vooraf toestemming. Je kunt je keuze aanpassen via ‘Cookie-instellingen’ onderaan de website.</p>
+      <h3>10. Minderjarigen</h3>
+      <p>Deze webshop is niet bedoeld om bewust gegevens te verzamelen van kinderen die daarvoor volgens de wet toestemming van een ouder of voogd nodig hebben. Denk je dat toch gegevens van een kind zijn verzameld? Neem dan contact met ons op.</p>
+      <h3>11. Wijzigingen</h3>
+      <p>Wij kunnen deze verklaring aanpassen wanneer de webshop of de wetgeving verandert. De meest recente versie staat altijd op deze pagina. Controleer de verklaring regelmatig.</p>
+      <p class="privacy-placeholder-note"><strong>Belangrijk voor publicatie:</strong> vul op de contactpagina je naam, adres en contactgegevens in. Vul ook de werkelijk gebruikte betaal-/bezorgdiensten in en controleer of de genoemde verwerkingen overeenkomen met je eigen werkwijze.</p>
+    </div>
+    <div class="privacy-footer-actions">
+      <button type="button" class="secondary" id="privacyCookieSettings">Cookievoorkeuren aanpassen</button>
+      <button type="button" class="primary" id="privacyDone">Sluiten</button>
+    </div>
+  </section>
+</div>
+
+<div id="maintenanceScreen" class="maintenance-screen" hidden role="alert" aria-live="assertive" aria-label="Website in onderhoud" tabindex="-1">
+  <section class="maintenance-card">
+    <div class="maintenance-logo" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M14.7 6.3a5 5 0 0 0-6.9 6.9L3.5 17.5a2.1 2.1 0 0 0 3 3l4.3-4.3a5 5 0 0 0 6.9-6.9l-3.1 3.1-3.2-3.2 3.3-2.9Z"/><path d="m5.2 18.8.1.1"/></svg></div>
+    <p class="maintenance-eyebrow">3D PRINTED SHOP</p>
+    <h1>Site is momenteel in onderhoud</h1>
+    <p class="maintenance-message">We proberen dit zo snel mogelijk te fixen.</p>
+  </section>
+</div>
+
+<div id="overlay" class="overlay hidden">
+ <section class="dialog"><button class="close" id="closeDialog" aria-label="Sluiten">×</button><div id="dialogContent"></div></section>
+</div>
+<div id="toast" class="toast"></div>
+
+<!-- Vaste webshopassistent met uitgebreide FAQ en sleutelvrije online zoekfunctie. -->
+<div class="shop-assistant" id="shopAssistant">
+  <section class="shop-assistant-panel" id="shopAssistantPanel" role="dialog" aria-modal="false" aria-labelledby="shopAssistantTitle" hidden>
+    <header class="shop-assistant-header">
+      <div class="shop-assistant-avatar" aria-hidden="true">✦</div>
+      <div class="shop-assistant-heading">
+        <strong id="shopAssistantTitle">Shopassistent</strong>
+        <small><span class="shop-assistant-online-dot"></span> Webshopadvies · gewoon gesprek · zelf kiezen om te zoeken</small>
+      </div>
+      <button class="shop-assistant-close" id="shopAssistantClose" type="button" aria-label="Chat sluiten">×</button>
+    </header>
+    <div class="shop-assistant-messages" id="shopAssistantMessages" aria-live="polite" aria-relevant="additions text">
+      <div class="shop-assistant-message bot"><p>Hoi! Je kunt hier gewoon met me praten of vragen stellen over de webshop. De gewone verzendknop stuurt je bericht als normaal gesprek. Via het pijltje ernaast kun je precies één van twee zoekopties kiezen: zoeken in de webshop of zoeken op internet.</p></div>
+    </div>
+    <div class="shop-assistant-suggestions" id="shopAssistantSuggestions">
+      <button type="button" data-assistant-prompt="Welke producten zijn er?">Assortiment</button>
+      <button type="button" data-assistant-prompt="Hoe werkt bestellen?">Bestellen</button>
+      <button type="button" data-assistant-prompt="Wat is de levertijd?">Levertijd</button>
+      <button type="button" data-assistant-prompt="Wat zijn de verzendkosten en kan ik ophalen?">Verzenden</button>
+      <button type="button" data-assistant-prompt="Welke filamentkleuren zijn beschikbaar?">Kleuren</button>
+      <button type="button" data-assistant-prompt="Hoe werkt een maatwerkofferte?">Offerte</button>
+      <button type="button" data-assistant-prompt="Hoe kan ik een eigen tekst op een product laten zetten?">Eigen tekst</button>
+      <button type="button" data-assistant-prompt="Hoe volg ik mijn bestelling?">Bestelling volgen</button>
+      <button type="button" data-assistant-prompt="Hoe werkt het 3D-voorbeeld?">3D-voorbeeld</button>
+      <button type="button" data-assistant-prompt="Hoe werkt retourneren?">Retouren</button>
+      <button type="button" data-assistant-prompt="Wat zijn de verzendkosten en levertijd?">Verzendkosten</button>
+      <button type="button" data-assistant-prompt="Welke betaalmethoden zijn er en waar vind ik mijn betaallink?">Betaallink</button>
+      <button type="button" data-assistant-prompt="Hoe werken de filamentmaterialen PLA, PETG, ABS en TPU?">Materialen</button>
+      <button type="button" data-assistant-prompt="Welke 3D-bestanden en slicers worden ondersteund?">STL / 3MF</button>
+      <button type="button" data-assistant-prompt="Hoe wordt mijn privacy beschermd in de webshopchat?">Privacy</button>
+      <button type="button" data-assistant-prompt="Hoe log ik in op mijn account?">Inloggen</button>
+      <button type="button" data-assistant-prompt="Hoe maak ik een account aan?">Account maken</button>
+      <button type="button" data-assistant-prompt="Hoe wijzig ik mijn gebruikersnaam en hoe log ik uit?">Account beheren</button>
+      <button type="button" data-assistant-prompt="Ik ben mijn wachtwoord vergeten, wat kan ik doen?">Wachtwoord vergeten</button>
+      <button type="button" data-assistant-prompt="Hoe werkt betalen met een betaalverzoek en waar vind ik de betaallink?">Betalen</button>
+      <button type="button" data-assistant-prompt="Hoe werkt het retourverzoek en welke termijn geldt?">Retour aanvragen</button>
+      <button type="button" data-assistant-prompt="Hoe werken productreviews en hoe laat ik er een achter?">Reviews</button>
+      <button type="button" data-assistant-prompt="Hoe werken favorieten en hoe bewaar ik een product?">Favorieten</button>
+      <button type="button" data-assistant-prompt="Hoe werkt de agenda en de voortgang van mijn print?">Printvoortgang</button>
+      <button type="button" data-assistant-prompt="Welke 3D-bestanden kan ik uploaden of bekijken en hoe werkt de preview?">3D-bestanden</button>
+      <button type="button" data-assistant-prompt="Hoe werkt de printercamera bij een bestelling?">Printercamera</button>
+      <button type="button" data-assistant-prompt="Hoi! Ik wil gewoon even praten.">Gewoon praten</button>
+      <button type="button" data-assistant-prompt="Wat is 3D-printen?" data-assistant-mode="internet">Web zoeken</button>
+    </div>
+    <form class="shop-assistant-form" id="shopAssistantForm">
+      <label class="visually-hidden" for="shopAssistantInput">Stel je vraag</label>
+      <input id="shopAssistantInput" type="text" maxlength="500" autocomplete="off" placeholder="Typ je bericht…" required>
+      <div class="assistant-send-wrap">
+        <button class="assistant-send-main" type="submit" aria-label="Bericht versturen" title="Gewoon gesprek"><span aria-hidden="true">➤</span></button>
+        <button class="assistant-send-menu-toggle" id="shopAssistantSearchMenuToggle" type="button" aria-label="Kies een zoekoptie" aria-haspopup="true" aria-expanded="false" aria-controls="shopAssistantSearchMenu" title="Zoekopties">⌄</button>
+        <div class="assistant-send-menu" id="shopAssistantSearchMenu" role="menu" hidden>
+          <button type="button" role="menuitem" data-assistant-send-mode="website">Zoek in mijn webshop</button>
+          <button type="button" role="menuitem" data-assistant-send-mode="internet">Zoek op het internet</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <button class="shop-assistant-toggle" id="shopAssistantToggle" type="button" aria-expanded="false" aria-controls="shopAssistantPanel">
+    <span class="shop-assistant-toggle-icon" aria-hidden="true">✦</span><span>Vraag het de bot</span>
+  </button>
+</div>
+<script type="module" src="./app.js?v=34-chatbot-herstel-300-faq-maintenance-fcm-chatpref-filament-export-5"></script>
+<script>
+  // Noodbediening: de chatknop blijft werken, ook wanneer een externe module niet laadt.
+  (() => {
+    const toggle = document.getElementById("shopAssistantToggle");
+    const panel = document.getElementById("shopAssistantPanel");
+    const close = document.getElementById("shopAssistantClose");
+    if (!toggle || !panel) return;
+    toggle.addEventListener("click", () => {
+      panel.hidden = !panel.hidden;
+      toggle.setAttribute("aria-expanded", String(!panel.hidden));
+      if (!panel.hidden) setTimeout(() => document.getElementById("shopAssistantInput")?.focus(), 60);
+    });
+    close?.addEventListener("click", () => {
+      panel.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  })();
+</script>
+</body></html>
